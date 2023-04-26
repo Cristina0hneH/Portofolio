@@ -1,0 +1,39 @@
+
+.cvBtn{
+    position: absolute; 
+    top: 14px; 
+    left: 1181px; 
+    height: 36px; 
+    padding: 0 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #FFFFFFFF; 
+    background: #0984E3FF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 6px; 
+    gap: 6px; 
+  }
+  .button .icon {
+    width: 16px; 
+    height: 16px; 
+    fill: #FFFFFFFF; 
+  }
+  /* Hover */
+  .button:hover {
+    color: #FFFFFFFF; 
+    background: #0877CBFF; 
+  }
+  /* Pressed */
+  .button:hover:active {
+    color: #FFFFFFFF; 
+    background: #086AB5FF; 
+  }
+  /* Disabled */
+  .button:disabled {
+    opacity: 0.4; 
+  }
