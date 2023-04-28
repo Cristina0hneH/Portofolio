@@ -1,0 +1,31 @@
+.cv{
+  position: absolute; 
+  top: 14px; 
+  left: 1181px; 
+  height: 36px; 
+  padding: 0 12px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: Manrope; 
+  font-size: 14px; 
+  line-height: 22px; 
+  color: #FFFFFFFF;
+  background: #0984E3FF; 
+  opacity: 1; 
+  border: none; 
+  border-radius: 6px;
+}
+
+
+.cv:hover:hover {
+    color: #FFFFFFFF; 
+    background: #0877CBFF;
+}
+
+.cv:hover:active {
+    color: #FFFFFFFF; 
+    background: #086AB5FF;
+}
+
+/*small screen*/
