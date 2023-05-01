@@ -1,7 +1,4 @@
-.cv{
-  position: absolute; 
-  top: 14px; 
-  left: 1181px; 
+.cv{  
   height: 36px; 
   padding: 0 12px; 
   display: flex; 
@@ -13,8 +10,9 @@
   color: #FFFFFFFF;
   background: #0984E3FF; 
   opacity: 1; 
-  border: none; 
+  border: 1px;
   border-radius: 6px;
+  gap: 6px; 
 }
 
 
@@ -28,4 +26,3 @@
     background: #086AB5FF;
 }
 
-/*small screen*/

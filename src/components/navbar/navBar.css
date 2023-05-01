@@ -1,10 +1,28 @@
-/* Container 5134 */
-.navBar {
-    position: absolute; 
-    top: 0px; 
-    left: 0px; 
-    width: 1440px; 
-    height: 64px; 
-    background: #000000FF; 
-    border-radius: 6px; 
-  }
+
+.navBar{
+  display: flex;
+  height: 64px;
+  background: #000000FF;
+  border-radius: 6px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItems{
+  display: flex;
+  background: #000000FF ;
+  align-items: center;
+}
+
+.navLink{ 
+  align-items: center; 
+  font-family: Manrope; 
+  font-size: 14px; 
+  line-height: 22px; 
+  opacity: 1;
+  padding: 0px 6px 0px;
+}
+
+
