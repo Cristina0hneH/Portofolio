@@ -1,0 +1,39 @@
+.navBar{
+    display: flex;
+    height: 64px;
+    background: #F3F4F6FF;
+    border-radius: 6px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navItems{
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLink{ 
+    align-items: center; 
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    opacity: 1;
+    padding: 0px 6px 0px;
+  }
+
+  .navLink.selected{
+    color: #FBC02DFF;
+  }
+  .navLink:active{
+    color: #FBC02DFF;
+  }
+  .navLink:hover{
+    color: #624702FF;
+  }
+
+
+  
+  
+  

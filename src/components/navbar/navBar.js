@@ -1,7 +1,7 @@
 import React from 'react';
 import CvBtn from '../downloadBtn/CvBtn';
 import useLocalStorage from 'use-local-storage';
-import '../navbar/navBar.css';
+import '../navbar/navBar__light.css';
 
  function NavBar(){
     //use state for dark/light theme
