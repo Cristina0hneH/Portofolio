@@ -1,0 +1,38 @@
+body{
+    background: #1E2128FF;
+}
+h1{
+    color:  #0984E3FF;
+    font-family: Poppins;
+    font-size: 56px;
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+p{
+    font-family: Manrope;
+    color: #9095A1FF;
+    padding: 4px 4px 38px;
+}
+
+.heroButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactBtn{
+    font-family: Manrope;
+    font-size: 18px;
+    border: 1px; 
+    border-radius: 6px;
+    color: #0984E3FF;
+    background: #00000000;
+}
+
+.contactBtn:hover{
+    background-color: #0984E3FF;
+    color: white;
+}
