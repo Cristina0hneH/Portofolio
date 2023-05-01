@@ -1,4 +1,4 @@
-import '../hero/hero__dark.css';
+import '../hero/hero__light.css';
 import CvBtn from '../downloadBtn/CvBtn';
 import LogoLight from '../../assets/logo/Logo__light';
 import LogoDark from '../../assets/logo/Logo__dark';
@@ -15,7 +15,7 @@ export default function Hero(){
         </section>
         <aside>
             {/*<LogoDark />*/}
-            <LogoDark />
+            <LogoLight />
         </aside>
     </div>
 }
