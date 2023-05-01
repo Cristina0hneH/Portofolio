@@ -17,11 +17,14 @@ import '../navbar/navBar.css';
     }
     return (<div className="navBar">
         {/*button not yet functioning*/}
-        <button onClick={switchTheme}>Change Theme</button>
-        <a className="navLink" href="#about">About</a>
-        <a className="navLinks" href="#projects">Projects</a>
-        <a className="navLinks" href="#contact">Contact</a>
-        <CvBtn />
+        <button className="themeBtn"onClick={switchTheme}>Change Theme</button>
+
+        <div className="navItems">
+            <a className="navLink" href="#about">About</a>
+            <a className="navLink" href="#projects">Projects</a>
+            <a className="navLink" href="#contact">Contact</a>
+            <CvBtn className="navLink"/>
+        </div>
     </div>)
 }
 export default NavBar;
