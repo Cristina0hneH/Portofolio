@@ -11,9 +11,9 @@
   color: #624702FF; 
   background: #FBC02DFF; 
   opacity: 1; 
-  border: none; 
-  border-radius: 6px; /* border-m */
-   
+  border: 1px;
+  border-radius: 6px;
+  padding: 0px 12px;
   }
 
 .cv:hover{

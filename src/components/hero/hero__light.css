@@ -1,0 +1,13 @@
+body{
+    background: #F8F9FAFF
+}
+h1{
+    color: #FBC02DFF;
+    font-family: Poppins;
+    font-size: 56px;
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
