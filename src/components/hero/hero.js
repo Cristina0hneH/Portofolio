@@ -1,8 +1,10 @@
 import '../hero/hero__light.css';
 import CvBtn from '../downloadBtn/CvBtn';
-import LogoLight from '../../assets/logo/Logo__light';
-/*import LogoDark from '../../assets/logo/Logo__dark';*/
+//import LogoDark from '../../assets/logo/LogoDark';
+//import BlobDark from '../../assets/background/blobDark';
 import {SiMinutemailer} from 'react-icons/si';
+import LogoLight from '../../assets/logo/LogoLight';
+import BlobLight from '../../assets/background/blobLight';
 
 export default function Hero(){
     return <div className="hero">
@@ -16,7 +18,10 @@ export default function Hero(){
         </section>
         <aside>
             {/*<LogoDark />*/}
-            <LogoLight />
+            <div className="blob">
+            <BlobLight /></div>
+            <LogoLight className='overlay'/> 
+            
         </aside>
     </div>
 }
