@@ -5,6 +5,7 @@ h1{
     color: #FBC02DFF;
     font-family: Poppins;
     font-size: 56px;
+    padding: 12px 4px;
 }
 .hero{
     display: flex;
@@ -36,3 +37,14 @@ p{
     background-color: #FBC02DFF;
     color: #624702FF;
 }
+ aside{
+    position: relative;
+    margin: 30px;
+} 
+ .blob {
+    position: absolute;
+    z-index: -9;
+    width: 100%;
+}
+
+ 

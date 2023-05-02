@@ -36,3 +36,12 @@ p{
     background-color: #0984E3FF;
     color: white;
 }
+aside{
+    position: relative;
+    margin: 30px;
+} 
+ .blob {
+    position: absolute;
+    z-index: -9;
+    width: 100%;
+}
