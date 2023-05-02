@@ -1,4 +1,4 @@
-import './projects__light.css';
+import './projects__dark.css';
 import Carousel from './Carousel';
 
 export default function Projects(){
