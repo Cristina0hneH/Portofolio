@@ -1,5 +1,5 @@
 import './about__light.css';
-import './about__dark.css';
+// import './about__dark.css';
 import Icons from './Icons';
 
 
