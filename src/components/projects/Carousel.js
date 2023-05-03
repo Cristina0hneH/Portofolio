@@ -21,13 +21,13 @@ export default function Carousel(props) {
 
   const moveRight = () => {
     var newActive = active;
-    setActive((newActive + 1) % items.length);
+    setActive((newActive + 1) % items.length-1);
     setDirection('right');
   };
   const cards = [
-    <img src="https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg" onDragStart={handleDragStart} role="presentation" />,
-    <img src="https://www.computersciencedegreehub.com/wp-content/uploads/2023/02/shutterstock_535124956-1024x756.jpg" onDragStart={handleDragStart} role="presentation" />,
-    <img src="https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg" onDragStart={handleDragStart} role="presentation" />,
+    < img className="cardimg" src="https://images.unsplash.com/photo-1460648304944-4883b5cfcee5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2xpZGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />,
+    < img className="cardimg" src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" onDragStart={handleDragStart} role="presentation" />,
+    < img className="cardimg" src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" onDragStart={handleDragStart} role="presentation" />,
   ];
   return (
     <div id="carousel" className="noselect">

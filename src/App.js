@@ -4,6 +4,8 @@ import CvBtn from './components/downloadBtn/CvBtn';
 import Hero from './components/hero/hero';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
+import LeetCode from './components/challenges/LeetCode';
+import ContactForm from './components/contact/ContactForm';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <LeetCode />
+      <ContactForm />
     </div>
   );
 }

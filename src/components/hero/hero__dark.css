@@ -12,7 +12,7 @@ h1{
     align-items: center;
 }
 
-p{
+.hero p{
     font-family: Manrope;
     color: #9095A1FF;
     padding: 4px 4px 38px;
