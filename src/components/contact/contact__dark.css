@@ -1,0 +1,80 @@
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact h3{
+    color:  #0984E3FF;
+    font-family: Poppins;
+    font-size: 56px;
+    margin: 32px auto;
+    text-align: center;
+}
+.contact p{
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    color: #9095A1;
+}
+.centered{
+    margin: 0 auto;
+    width: 50%;
+}
+.contactName{
+    display: flex;
+    width: 50%;
+    justify-content: space-between; 
+}
+
+
+
+.email, .message, .firstName, .lastName{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.firstName{ 
+    padding: 8px 4px 8px 0px;
+}
+
+.lastName{
+    padding: 8px 0px 8px 4px;
+}
+
+.email, .message{
+    padding: 8px 0px;
+}
+label, input{
+    font-family: Manrope; 
+    font-size: 18px; 
+}
+label{
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    color: #9095A1;
+}
+input{
+    background: #F8F9FAFF; 
+    border-radius: 6px; 
+}
+
+ button, .submitBtn{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Manrope; 
+    font-size: 18px; 
+    line-height: 28px; 
+    color: #FFFFFFFF; 
+    background: #0984E3FF; 
+    border-radius: 6px;
+    border: none;
+    padding: 0px 16px;
+    margin: 16px 0px;
+}

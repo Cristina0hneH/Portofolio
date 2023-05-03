@@ -1,10 +1,10 @@
-import '../hero/hero__light.css';
+import '../hero/hero__dark.css';
 import CvBtn from '../downloadBtn/CvBtn';
-//import LogoDark from '../../assets/logo/LogoDark';
-//import BlobDark from '../../assets/background/blobDark';
+import LogoDark from '../../assets/logo/LogoDark';
+import BlobDark from '../../assets/background/blobDark';
 import {SiMinutemailer} from 'react-icons/si';
-import LogoLight from '../../assets/logo/LogoLight';
-import BlobLight from '../../assets/background/blobLight';
+//import LogoLight from '../../assets/logo/LogoLight';
+//import BlobLight from '../../assets/background/blobLight';
 
 export default function Hero(){
     return <div className="hero">
@@ -19,8 +19,8 @@ export default function Hero(){
         <aside>
             {/*<LogoDark />*/}
             <div className="blob">
-            <BlobLight /></div>
-            <LogoLight className='overlay'/> 
+            <BlobDark /></div>
+            <LogoDark className='overlay'/> 
             
         </aside>
     </div>

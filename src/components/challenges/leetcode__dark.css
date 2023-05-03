@@ -1,0 +1,44 @@
+.card img{
+    max-width: 90%;
+    max-height: 90%;
+    border: 1px;
+    border-radius: 8px;
+    padding-top: 8px;
+}
+.card{
+    border: solid 1px;
+    width: 30%;
+    height: 50%;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(51, 62, 75); 
+    border-radius: 8px; 
+    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ccc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ccc h3{
+    color:  #0984E3FF;
+    font-family: Poppins;
+    font-size: 56px;
+}
+.ccc p{
+    font-family: Manrope;
+    color: #9095A1FF;
+    padding: 4px 4px 38px;
+}
