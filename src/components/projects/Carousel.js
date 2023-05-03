@@ -1,7 +1,7 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import React, { useState } from 'react';
-import Item from './Item';
+
 
 export default function Carousel(props) {
   const [items, setItems] = useState();
@@ -25,9 +25,9 @@ export default function Carousel(props) {
     setDirection('right');
   };
   const cards = [
-    <img src="path-to-img" onDragStart={handleDragStart} role="presentation" />,
-    <img src="path-to-img" onDragStart={handleDragStart} role="presentation" />,
-    <img src="path-to-img" onDragStart={handleDragStart} role="presentation" />,
+    <img src="https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg" onDragStart={handleDragStart} role="presentation" />,
+    <img src="https://www.computersciencedegreehub.com/wp-content/uploads/2023/02/shutterstock_535124956-1024x756.jpg" onDragStart={handleDragStart} role="presentation" />,
+    <img src="https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg" onDragStart={handleDragStart} role="presentation" />,
   ];
   return (
     <div id="carousel" className="noselect">
