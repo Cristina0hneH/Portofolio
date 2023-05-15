@@ -1,15 +1,15 @@
 import emailjs from '@emailjs/browser';
 import { sendForm, send } from 'emailjs-com';
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import './contact__dark.css';
 
 export default function ContactForm(){
-    const firstNameRef = useRef();
-    const lastNameRef = useRef();
-    const emailRef = useRef();
-    const messageRef = useRef();
-    
-    const [status, setStatus] = useState("Submit");
+   
+    // const [ email, setEmail] = useState('');
+    // const [fName, setFName] = useState('');
+    // const [ lName, setLName] = useState('');
+    // const [status, setStatus] = useState("Submit");
+    const validated = true; 
     
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -19,25 +19,36 @@ export default function ContactForm(){
               email: e.target.email.value,
               message: e.target.message.value,
             };
-            console.log(form);
+        console.log(form.email);
 
-     emailjs.send('service_dx7j55j','template_h7so5d4',form, 'iRFWwdY6NdXoQvjov')
+        const validateForm = () =>{
+            
+            //make sure fields are not empty
+            if(form.firstName.length === 0){
+                return validated = false;
+            }else if(form.lastName.length === 0 ){
+                return validated = false;
+            }else if(form.email.length === 0){
+                console.log('it gets here') 
+            }else if (form.message.length === 0){
+                return validated = false;  
+            }
+        }
+    if(validated === true){
+        emailjs.send('service_dx7j55j','template_h7so5d4',form, 'iRFWwdY6NdXoQvjov')
             .then((res) => { 
                 return res
             }, (error) => {
                 console.log(error);
             });
-        //  let response = await fetch("http://localhost:3001/", {
-         //     method: "POST",
-         //     headers: {
-        //      "Content-Type": "application/json;charset=utf-8",
-        //      },
-        //      body: JSON.stringify(details),
-        //  });
-        //  console.log("Submit event triggered")
+    
         
-        //setStatus("Submit");
+        
+    } else{
+        console.log("validation not successful")
     }
+    validateForm();
+}
     return (<div className="contact">
             <div className="centered">
                 <h3>Contact</h3>
@@ -47,17 +58,17 @@ export default function ContactForm(){
             <div className="contactName">
                 <div className="firstName">
                     <label htmlFor="firstName">first name</label>
-                    <input type="text" ref={firstNameRef} id="firstName"  placeholder='first name' />
+                    <input type="text"  id="firstName" required  placeholder='first name' />
                 </div>
                 <div className="lastName">
                 <label htmlFor="lastName">last name</label>
-                <input type="text"  id="lastName" ref={lastNameRef}  placeholder='last name'/>
+                <input type="text"  id="lastName"  required placeholder='last name'/>
                 </div>
             </div>
-            <div className="email"><label htmlFor="email">email adress</label>
-            <input type="text" ref={emailRef}  id="email"  placeholder='email'/></div>
-            <div className="message"><label htmlFor="message">message</label>
-            <input type="textarea"  id="message" ref={messageRef}  placeholder='message'/></div>
+            <div className="email"><label htmlFor="email" required>email adress</label>
+            <input type="text"   id="email"  placeholder='email'/></div>
+            <div className="message"><label htmlFor="message" >message</label>
+            <input type="textarea"  id="message"  required placeholder='message'/></div>
             <button type="submit" className="submitBtn" >Submit</button>
         </form>
 
