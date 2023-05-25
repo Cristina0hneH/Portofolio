@@ -39,9 +39,29 @@ h1{
 aside{
     position: relative;
     margin: 30px;
+    display: flex; 
+    flex-wrap: wrap;
 } 
  .blob {
     position: absolute;
     z-index: -9;
     width: 100%;
+}
+@media only screen and (max-width: 600px){
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blob {
+        position: absolute;
+        z-index: -9;
+        max-width: 90%;
+    }
+    .logo{
+        max-width: 50%
+    }
+    aside{
+        max-width: 100%;
+    }
 }

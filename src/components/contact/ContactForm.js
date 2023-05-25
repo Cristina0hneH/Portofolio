@@ -13,41 +13,47 @@ export default function ContactForm(){
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-            const form = {
-              firstName: e.target.firstName.value,
-              lastName: e.target.lastName.value,
-              email: e.target.email.value,
-              message: e.target.message.value,
-            };
-        console.log(form.email);
+        
+        const form = {
+            firstName: e.target.firstName.value,
+            lastName: e.target.lastName.value,
+            email: e.target.email.value,
+            message: e.target.message.value,
+        };
+        
 
-        const validateForm = () =>{
+    //     const validateForm = () =>{
             
-            //make sure fields are not empty
-            if(form.firstName.length === 0){
-                return validated = false;
-            }else if(form.lastName.length === 0 ){
-                return validated = false;
-            }else if(form.email.length === 0){
-                console.log('it gets here') 
-            }else if (form.message.length === 0){
-                return validated = false;  
-            }
-        }
-    if(validated === true){
+    //         //make sure fields are not empty
+    //         if(form.firstName.length === 0){
+    //             return validated = false;
+    //         }else if(form.lastName.length === 0 ){
+    //             return validated = false;
+    //         }else if(form.email.length === 0){
+    //             console.log('it gets here') 
+    //         }else if (form.message.length === 0){
+    //             return validated = false;  
+    //         }
+    //     }
+    // if(validated === true){
+        if(form.email === ''){
+            console.log("pls add email")
+        }else if(form.message === ''){
+            console.log("what is your message?")
+        }else{
         emailjs.send('service_dx7j55j','template_h7so5d4',form, 'iRFWwdY6NdXoQvjov')
             .then((res) => { 
                 return res
             }, (error) => {
                 console.log(error);
             });
-    
+        }
         
         
-    } else{
-        console.log("validation not successful")
-    }
-    validateForm();
+    // } else{
+    //     console.log("validation not successful")
+    // }
+    // validateForm();
 }
     return (<div className="contact">
             <div className="centered">
@@ -67,6 +73,7 @@ export default function ContactForm(){
             </div>
             <div className="email"><label htmlFor="email" required>email adress</label>
             <input type="text"   id="email"  placeholder='email'/></div>
+            {/* {email ? "send form" : "add email" } */}
             <div className="message"><label htmlFor="message" >message</label>
             <input type="textarea"  id="message"  required placeholder='message'/></div>
             <button type="submit" className="submitBtn" >Submit</button>
