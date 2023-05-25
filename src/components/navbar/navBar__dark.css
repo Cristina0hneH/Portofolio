@@ -4,10 +4,10 @@
   height: 64px;
   background: #000000FF;
   border-radius: 6px;
-  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
 }
 
 .navItems{

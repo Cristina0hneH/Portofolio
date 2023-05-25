@@ -19,8 +19,10 @@ export default function Hero(){
         <aside>
             {/*<LogoDark />*/}
             <div className="blob">
-            <BlobDark /></div>
-            <LogoDark className='overlay'/> 
+                <BlobDark /></div>
+            <div className='logo'>
+                <LogoDark /> 
+            </div>
             
         </aside>
     </div>
