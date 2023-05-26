@@ -1,31 +1,30 @@
-
-.cv{ 
-  height: 36px; 
-  padding: 0 12px; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  font-family: Manrope; 
-  font-size: 14px; 
-  line-height: 22px; 
-  color: #624702FF; 
-  background: #FBC02DFF; 
-  opacity: 1; 
+.cv {
+  height: 36px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Manrope;
+  font-size: 14px;
+  line-height: 22px;
+  color: #624702ff;
+  background: #fbc02dff;
+  opacity: 1;
   border: 1px;
   border-radius: 6px;
   padding: 0px 12px;
-  }
+}
 
-.cv:hover{
-    color: #624702FF; 
-    background: #E2A305FF;
+.cv:hover {
+  color: #624702ff;
+  background: #e2a305ff;
 }
 
 .cv:hover:active {
-    color: #624702FF; 
-    background: #C28C04FF; 
-  }
+  color: #624702ff;
+  background: #c28c04ff;
+}
 
-  .icon{
-    padding: 0px 8px;
-  }
+.icon {
+  padding: 0px 8px;
+}

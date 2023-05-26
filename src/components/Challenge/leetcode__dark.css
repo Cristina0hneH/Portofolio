@@ -1,4 +1,4 @@
-.projects {
+.challenge {
   max-width: 90%;
   margin: 32px auto;
   display: flex;
@@ -6,17 +6,17 @@
   flex-direction: column;
 }
 
-.projects h2 {
+.challenge h2 {
   color: #0984e3;
 }
 
-.projects p {
+.challenge p {
   font-size: 18px;
   line-height: 28px;
   color: #9095a1;
 }
 
-.project-items {
+.challenge-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,15 +26,15 @@
 }
 
 @media (min-width: 600px) {
-  .project-items {
+  .challenge-cards {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
   }
 }
 
-/* Item */
-.project-item {
+/* Cards */
+.challenge-card {
   width: 80%;
   border: 1px solid #ffffff;
   display: flex;
@@ -47,17 +47,17 @@
 }
 
 @media (min-width: 600px) {
-  .project-item {
+  .challenge-card {
     max-width: 250px;
   }
 }
 
-.project-item__img {
+.challenge-card__img {
   max-width: 100%;
   border-radius: 8px 8px 0 0;
 }
 
-.project-item__text {
+.challenge-card__text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,27 +66,27 @@
   padding: 16px 8px;
 }
 
-.project-item h4 {
+.challenge-card h4 {
   font-size: 18px;
   font-weight: 800;
   line-height: 28px;
   color: #000000;
 }
 
-.project-item h5 {
+.challenge-card h5 {
   font-size: 18px;
   font-weight: 600;
   color: #054272;
 }
 
-.project-item p {
+.challenge-card p {
   font-size: 16px;
   line-height: 26px;
   color: #9095A1;
   text-align: center;
 }
 
-.project-item i {
+.challenge-card i {
   font-size: 16px;
   color: #255ABB;
 }

@@ -1,80 +1,90 @@
-.contactForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+.contact {
+  max-width: 60%;
+  margin: 32px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact h2 {
+  color: #0984e3;
+  font-size: 56px;
+}
+
+.contact p {
+  font-family: Manrope;
+  font-size: 18px;
+  line-height: 28px;
+  color: #9095a1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+}
+
+.contact-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+@media (min-width: 770px) {
+  .contact-name {
+    flex-direction: row;
+  }
+  .first-name, .last-name {
+    width: 50%;
+  }
+}
+
+.email,
+.message,
+.first-name,
+.last-name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .contact-name, .email, .message {
     width: 100%;
+  }
 }
 
-.contact h3{
-    color:  #0984E3FF;
-    font-family: Poppins;
-    font-size: 56px;
-    margin: 32px auto;
-    text-align: center;
-}
-.contact p{
-    font-family: Manrope; 
-    font-size: 18px; 
-    line-height: 28px; 
-    color: #9095A1;
-}
-.centered{
-    margin: 0 auto;
-    width: 50%;
-}
-.contactName{
-    display: flex;
-    width: 50%;
-    justify-content: space-between; 
+.contact-form label {
+  padding: 0px 0px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #9095a1;
 }
 
-
-
-.email, .message, .firstName, .lastName{
-    width:50%;
-    display: flex;
-    flex-direction: column;
-    
+.contact-form input, textarea {
+  padding: 8px 16px;
+  font-size: 16px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
 }
 
-.firstName{ 
-    padding: 8px 4px 8px 0px;
+.submit-btn {
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  background: #0984e3;
+  border-radius: 6px;
+  border: none;
+  padding: 8px 64px;
 }
 
-.lastName{
-    padding: 8px 0px 8px 4px;
-}
-
-.email, .message{
-    padding: 8px 0px;
-}
-label, input{
-    font-family: Manrope; 
-    font-size: 18px; 
-}
-label{
-    font-family: Manrope; 
-    font-size: 18px; 
-    line-height: 28px; 
-    color: #9095A1;
-}
-input{
-    background: #F8F9FAFF; 
-    border-radius: 6px; 
-}
-
- button, .submitBtn{
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    font-family: Manrope; 
-    font-size: 18px; 
-    line-height: 28px; 
-    color: #FFFFFFFF; 
-    background: #0984E3FF; 
-    border-radius: 6px;
-    border: none;
-    padding: 0px 16px;
-    margin: 16px 0px;
+.submit-btn:hover {
+  background-color: #0877cb;
+  transition: 0.5s;
 }
