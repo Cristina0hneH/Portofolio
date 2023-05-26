@@ -1,31 +1,23 @@
-.cv{  
-  height: 36px; 
-  padding: 0 12px; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  font-family: Manrope; 
-  font-size: 14px; 
-  line-height: 22px; 
-  color: #FFFFFFFF;
-  background: #0984E3FF; 
-  opacity: 1; 
-  border: 1px;
+.cv {
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  background: #0984e3;
+  border: 1px solid #0984e3;
   border-radius: 6px;
-  gap: 6px; 
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-
-.cv:hover:hover {
-    color: #FFFFFFFF; 
-    background: #0877CBFF;
+.cv:hover {
+  color: #ffffff;
+  background: #0877cb;
+  transition: 0.5s;
 }
 
-.cv:hover:active {
-    color: #FFFFFFFF; 
-    background: #086AB5FF;
-}
-
-.icon{
-  padding: 0px 8px;
+.cv:active {
+  color: #ffffff;
+  background: #086ab5;
 }
